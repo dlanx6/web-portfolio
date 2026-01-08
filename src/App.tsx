@@ -1,9 +1,7 @@
+import IndexPage from './pages/IndexPage';
+
 const App = () => {
-  return (
-    <>
-      
-    </>
-  )
+  return <IndexPage />
 }
 
 export default App
