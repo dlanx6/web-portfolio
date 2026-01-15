@@ -1,7 +1,7 @@
-import IndexPage from './pages/IndexPage';
+import Index from './pages/Index';
 
 const App = () => {
-  return <IndexPage />
+  return <Index />;
 }
 
-export default App
+export default App;

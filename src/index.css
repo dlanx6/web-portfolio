@@ -47,11 +47,11 @@
 
   /* Box Shadow */
   --glow-button: 0 0 30px hsl(175 80% 45% / 0.4);
+  --glow-card: 0 0 10px hsl(175 80% 45% / 0.2);
   --glow-primary: 0 60px 60px hsl(175 80% 45% / 0.2);
   --glow-subtle: 0 0 40px hsl(175 80% 45% / 0.1);
 
   /* Gradients */
-  --gradient-hero: linear-gradient(135deg, hsl(175 80% 45%) 0%, hsl(185 75% 40%) 100%);
   --gradient-card: linear-gradient(145deg, hsl(200 20% 9%) 0%, hsl(200 20% 5%) 100%);
   --gradient-text: linear-gradient(90deg, hsl(180 10% 92%) 0%, hsl(175 80% 50%) 100%);
 
@@ -161,6 +161,7 @@
 
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 72px ; /* Header height */
   }
 
   body {
@@ -204,6 +205,10 @@
 
 @utility glow-button { 
   box-shadow: var(--glow-button);
+}
+
+@utility glow-card {
+  box-shadow: var(--glow-card);
 }
 
 @utility card-gradient { 

@@ -10,7 +10,7 @@ const Hero = () => {
       {/* Background Glow */}
       <div className="absolute top-1/5 inset-x-0 mx-auto rounded-full w-150 h-100 bg-radial from-primary/15 to-primary/13 blur-[120px] pointer-events-none" />
 
-      <div className="container relative md:max-w-5xl mx-auto">
+      <div className="container relative max-w-5xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -39,29 +39,27 @@ const Hero = () => {
 
           {/* Tagline */}
           <motion.h2
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-muted-foreground"
+            className="text-2xl md:text-3xl lg:text-4xl max-w-xl font-semibold text-balance text-muted-foreground md:leading-11"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
           >
-            I build things for the web.
+            I enjoy learning and building for the <span className="text-primary">web</span> and <span className="text-primary">Web3</span>.
           </motion.h2>
 
           {/* Description */}
           <motion.p
-            className="text-muted-foreground text-base md:text-lg max-w-xl leading-relaxed"
+            className="text-muted-foreground text-base md:text-lg max-w-2xl text-balanced leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
           >
-            An aspiring full-stack developer with passion for learning
-            technologies and building innovative solutions, specializing in web
-            development currently with Next.js and React.
+            An aspiring full-stack developer and future smart contract developer with passion for learning new technologies and building innovative solutions. Driven by continuous learning, aiming to deliver meaningful and effective solutions.
           </motion.p>
 
           {/* Buttons */}
           <motion.div
-            className="flex flex-wrap gap-4 pt-4"
+            className="flex flex-wrap gap-4 pt-2"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
@@ -87,7 +85,7 @@ const Hero = () => {
 
           {/* Socials */}
           <motion.div
-            className="flex gap-4 pt-4"
+            className="flex gap-4 pt-2"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
@@ -114,13 +112,13 @@ const Hero = () => {
 
           {/* Scroll Down Indicator */}
           <motion.div
-            className="absolute -bottom-10 md:bottom-0  left-1/2 -translate-x-1/2"
+            className="absolute -bottom-6 md:bottom-0 left-1/2 -translate-x-1/2"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2 }}
           >
             <motion.div
-              animate={{ y: [32, 38, 32] }}
+              animate={{ y: [0, 8, 0] }}
               transition={{
                 duration: 1.5,
                 repeat: Infinity,
